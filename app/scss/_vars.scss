@@ -1,0 +1,22 @@
+$ora: #FF7A00;
+$text: #b0b0b0;
+$grey: #1C1D1E;
+@mixin f700 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+@mixin f400 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+@mixin f600 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+@mixin f500 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
