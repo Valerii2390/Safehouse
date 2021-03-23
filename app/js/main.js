@@ -18,4 +18,14 @@ $(function() {
         $('#' + id).addClass('active-tab').fadeIn();
         return true;
     });
+
+    $('.about__slider_inner').slick({
+        autoplay: true,
+        autoplaySpeed: 1000,
+        dots: false,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        cssEase: 'linear',
+    });
 });
