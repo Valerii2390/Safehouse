@@ -533,4 +533,178 @@ form {
 }
 
 // end about
+// start gallery
+.gallery__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.popup-gallery {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 20px;
+    position: relative;
+    &:hover {
+        color: #FF7A00;
+        opacity: 0.7;
+        &::before {
+            content: '';
+            background-image: url(../images/icons/hand.svg);
+            width: 39px;
+            height: 47px;
+            position: absolute;
+            z-index: 10;
+            bottom: -10px;
+            left: 60px;
+        }
+    }
+    svg {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+    }
+}
+
+.gallery__item_link {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    padding: 21px 0;
+    width: 100%;
+}
+
+// end gallery
+// start price
+.price {
+    padding-top: 115px;
+    padding-bottom: 56px;
+}
+
+.price__title {
+    font-size: 30px;
+    line-height: 36px;
+    @include f400;
+    text-align: center;
+    margin-bottom: 72px;
+    text-transform: uppercase;
+}
+
+.price__inner {
+    background-color: #3D3D3D;
+    border: 6px solid #FF7A00;
+}
+
+.tabs1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab1 {
+    border: 6px solid #313131;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 17px 0 22px;
+    border-right: none;
+    border-top: none;
+    margin-bottom: 26px;
+}
+
+.tab1:first-child {
+    border-left: none;
+}
+
+.tab-item1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.tab-item1.active-tab1 {
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.job__inner {
+    margin-right: auto;
+}
+
+.title {
+    font-size: 16px;
+    line-height: 20px;
+    @include f700;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border: 1px solid #fff;
+    width: 100%;
+    min-width: 230px;
+}
+
+.job__title {
+    padding-left: 66px;
+    min-width: 700px;
+    border-left: none;
+    border-right: none;
+}
+
+.unit__title,
+.money__title {
+    text-align: center;
+}
+
+.unit__title {
+    border-right: none;
+}
+
+.money__title {
+    border-right: none;
+}
+
+.job__list li {
+    padding: 10px 0px 10px 40px;
+    font-size: 14px;
+    @include f500;
+}
+
+.unit__list li,
+.money__list li {
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+.job__item,
+.unit__item,
+.money__item {
+    border: 1px solid #fff;
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.job__item {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.unit__item,
+.money__item {
+    border-right: none;
+    border-top: none;
+}
+
+.tab-item1 {
+    display: none;
+    &:first-child {
+        display: block;
+    }
+}
+
+// end price
 @import '_media';
