@@ -1,41 +1,471 @@
-     @media (max-width: 2048px) {}
-     
-     @media (max-width: 1920px) {}
-     
-     @media (max-width: 1800px) {}
-     
-     @media (max-width: 1620px) {}
-     
-     @media (max-width: 1600px) {}
-     
-     @media (max-width: 1536px) {}
-     
-     @media (max-width: 1440px) {}
-     
-     @media (max-width: 1200px) {}
-     
-     @media (max-width: 1080px) {}
-     
-     @media (max-width: 1024px) {}
-     
-     @media (max-width: 960px) {}
-     
-     @media (max-width: 900px) {}
-     
-     @media (max-width: 864px) {}
-     
-     @media (max-width: 800px) {}
-     
-     @media (max-width: 720px) {}
-     
-     @media (max-width: 640px) {}
-     
-     @media (max-width: 600px) {}
-     
-     @media (max-width: 540px) {}
-     
-     @media (max-width: 480px) {}
-     
-     @media (max-width: 360px) {}
-     
-     @media (max-width: 320px) {}
+             @media (max-width: 2048px) {}
+             
+             @media (max-width: 1920px) {}
+             
+             @media (max-width: 1800px) {}
+             
+             @media (max-width: 1620px) {}
+             
+             @media (max-width: 1600px) {}
+             
+             @media (max-width: 1536px) {}
+             
+             @media (max-width: 1440px) {}
+             
+             @media (max-width: 1300px) {
+                 .job__item {
+                     padding: 10px 0px 10px 10px;
+                 }
+                 .job__title {
+                     padding-left: 10px;
+                     min-width: 430px;
+                 }
+                 .job__list {
+                     min-width: 430px;
+                 }
+                 .job__list li {
+                     padding-left: 10px;
+                 }
+                 .tab1 {
+                     font-size: 14px;
+                 }
+             }
+             
+             @media (max-width: 1200px) {
+                 .price__inner {
+                     max-width: 900px;
+                 }
+                 .hero__inner {
+                     flex-wrap: wrap;
+                 }
+                 .hero__content {
+                     margin: 0 auto;
+                     margin-bottom: 100px;
+                 }
+                 .hero__slider {
+                     .hero__item {
+                         width: 600px !important;
+                         margin: 0 auto;
+                     }
+                     &::after {
+                         display: none;
+                     }
+                     .slick-arrow.arrow-next {
+                         display: none !important;
+                     }
+                     .slick-arrow.arrow-prev {
+                         display: none !important;
+                     }
+                 }
+             }
+             
+             @media (max-width: 1080px) {
+                 form::after {
+                     display: none;
+                 }
+                 .form__inner.form__inner1 {
+                     margin-left: 0;
+                     margin: 0 auto;
+                 }
+                 .form1::before {
+                     display: none;
+                 }
+                 .header__logo_text {
+                     margin-left: 20px;
+                 }
+                 .header__logo_img {
+                     margin-left: 10px;
+                 }
+             }
+             
+             @media (max-width: 1024px) {
+                 .service__tabs {
+                     flex-wrap: wrap;
+                     .tabs {
+                         display: flex;
+                         justify-content: space-between;
+                         align-items: center;
+                         margin: 0 auto !important;
+                     }
+                 }
+                 .tab {
+                     margin-bottom: 20px;
+                     width: 140px !important;
+                     border-right: 2px solid #FF7A00;
+                     border-left: 2px solid #FF7A00;
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                     height: 100px !important;
+                     &::before {
+                         display: none;
+                     }
+                 }
+                 .tab+.tab {
+                     margin-top: 0px;
+                 }
+                 .tab__title {
+                     display: none;
+                 }
+             }
+             
+             @media (max-width: 960px) {
+                 .price__inner {
+                     max-width: 700px;
+                 }
+                 .job__title {
+                     padding-left: 10px;
+                     min-width: 100px;
+                 }
+                 .job__list {
+                     min-width: 100px;
+                 }
+                 .job__list li {
+                     padding-left: 10px;
+                 }
+                 .tab1 {
+                     font-size: 14px;
+                 }
+                 .unit__title,
+                 .money__title {
+                     min-width: 177px;
+                 }
+             }
+             
+             @media (max-width: 900px) {
+                 .work {
+                     height: 380px !important;
+                 }
+                 .work__title {
+                     padding-top: 20px;
+                     font-size: 24px;
+                     line-height: 28px;
+                     &::after {
+                         display: none;
+                     }
+                     &::before {
+                         display: none;
+                     }
+                 }
+                 .work__item {
+                     margin-top: 15px;
+                     &:last-child {
+                         margin: 15px 0 auto;
+                     }
+                 }
+                 .work__item_number {
+                     font-size: 40px;
+                     line-height: 46px;
+                 }
+                 .work__item_text {
+                     font-size: 14px;
+                     line-height: 18px;
+                 }
+             }
+             
+             @media (max-width: 864px) {}
+             
+             @media (max-width: 800px) {}
+             
+             @media (max-width: 720px) {
+                 .price__inner {
+                     max-width: 700px;
+                 }
+                 .job__title {
+                     padding-left: 10px;
+                     min-width: 80px;
+                     font-size: 14px;
+                 }
+                 .job__list {
+                     min-width: 80px;
+                 }
+                 .job__list li {
+                     padding-left: 10px;
+                     font-size: 12px;
+                 }
+                 .tab1 {
+                     font-size: 14px;
+                 }
+                 .unit__title,
+                 .money__title {
+                     min-width: 170px;
+                     font-size: 14px;
+                 }
+                 .unit__list li,
+                 .money__list li {
+                     font-size: 12px;
+                 }
+                 .about {
+                     padding-bottom: 30px;
+                 }
+                 .about__inner {
+                     flex-wrap: wrap;
+                 }
+                 .about__list {
+                     margin-bottom: 30px;
+                 }
+                 .about__list_item {
+                     padding-top: 10px;
+                     padding-bottom: 7px;
+                     font-size: 16px;
+                     line-height: 20px;
+                 }
+                 .about__title {
+                     margin-bottom: 15px;
+                     font-size: 40px;
+                 }
+                 .menu {
+                     order: 1;
+                 }
+                 .header__menu_list {
+                     transform: all 0.3s;
+                     display: none;
+                     position: absolute;
+                     top: 0px;
+                     left: 0;
+                     right: 0;
+                     width: 100%;
+                     padding-left: 30px;
+                     transition-duration: all 0.3s;
+                     background-color: #FF7A00;
+                     height: 100%;
+                     z-index: 10;
+                 }
+                 .header__menu_list li {
+                     display: block;
+                     padding-top: 20px;
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                     margin-top: 200px;
+                     a {
+                         font-size: 40px;
+                         line-height: 48px;
+                         @include f700;
+                     }
+                 }
+                 .header__menu_item+.header__menu_item {
+                     margin-left: 0;
+                     margin-top: 0px;
+                     margin-bottom: 0px;
+                 }
+                 .header__menu_burger {
+                     display: block;
+                     width: 30px;
+                     position: absolute;
+                     cursor: pointer;
+                     outline: none;
+                     border: none;
+                     background-color: transparent;
+                     right: 25px;
+                     top: 60px;
+                     z-index: 12;
+                     div {
+                         background-color: $text;
+                         height: 3px;
+                         &+div {
+                             margin-top: 3px;
+                         }
+                     }
+                 }
+                 .header__call_phone {
+                     display: none;
+                 }
+                 .header__call_text {
+                     display: none;
+                 }
+                 .hide-phone {
+                     display: block;
+                     position: absolute;
+                     top: -8px;
+                     right: 0;
+                     left: -34px;
+                     z-index: 10;
+                     height: 26px;
+                     width: 26px;
+                 }
+                 .hero__slider {
+                     .hero__item {
+                         width: 400px !important;
+                         margin: 0 auto;
+                     }
+                 }
+             }
+             
+             @media (max-width: 640px) {
+                 .work::after {
+                     height: 400px;
+                 }
+                 .hero__slider {
+                     text-align: right;
+                     div.hero__item {
+                         max-width: 330px !important;
+                     }
+                 }
+                 .slick-dots {
+                     display: none !important;
+                 }
+                 .hero__content {
+                     margin-bottom: 40px;
+                 }
+                 .tabs {
+                     display: flex;
+                     justify-content: flex-start !important;
+                 }
+                 .tab {
+                     max-width: 50px;
+                     height: 50px !important;
+                     svg {
+                         width: 23px;
+                         height: 23px;
+                     }
+                 }
+                 .tab+.tab {
+                     margin-left: 10px;
+                 }
+                 .tab__content {
+                     border-right: 5px solid #FF7A00;
+                     border-bottom: 5px solid #FF7A00;
+                     margin: 0 auto;
+                     .tab-item.active-tab {
+                         max-width: 330px !important;
+                         height: 420px !important;
+                     }
+                 }
+                 .service__title {
+                     margin-bottom: 30px;
+                     position: relative;
+                     z-index: 10;
+                 }
+                 .tab-item.active-tab {
+                     padding-top: 30px;
+                     padding-bottom: 30px;
+                 }
+                 .tab__item_list {
+                     margin-top: 20px;
+                     li {
+                         margin-left: 10px;
+                         font-size: 12px;
+                         line-height: 16px;
+                     }
+                 }
+                 .service {
+                     padding: 30px 0;
+                 }
+                 .service__text_title {
+                     text-align: left;
+                 }
+                 form {
+                     text-align: left;
+                     max-width: 350px !important;
+                     .container {
+                         margin-left: 0 !important;
+                     }
+                 }
+                 .form::after {
+                     display: none;
+                 }
+             }
+             
+             @media (max-width: 600px) {
+                 .call__title {
+                     font-size: 24px;
+                     line-height: 28px;
+                 }
+                 .download {
+                     margin-left: 0;
+                 }
+                 .price {
+                     padding-top: 50px;
+                     padding-bottom: 30px;
+                 }
+                 .price__title {
+                     margin-bottom: 30px;
+                     font-size: 24px;
+                     line-height: 28px;
+                 }
+                 .price__inner {
+                     max-width: 700px;
+                 }
+                 .job__title {
+                     padding-left: 10px;
+                     min-width: 80px;
+                     font-size: 10px;
+                 }
+                 .job__list {
+                     min-width: 70px;
+                 }
+                 .job__list li {
+                     padding-left: 1px;
+                     font-size: 8px;
+                 }
+                 .tab1 {
+                     font-size: 8px;
+                 }
+                 .unit__title,
+                 .money__title {
+                     min-width: 70px;
+                     font-size: 10px;
+                 }
+                 .unit__list li,
+                 .money__list li {
+                     font-size: 8px;
+                 }
+             }
+             
+             @media (max-width: 540px) {
+                 .footer__inner {
+                     align-items: start;
+                 }
+                 .footer__inner_info {
+                     margin-left: 20px;
+                     font-size: 14px;
+                     line-height: 18px;
+                 }
+                 .footer__inner_phone::before {
+                     left: -30px;
+                 }
+                 .footer__info_mail::before {
+                     left: -30px;
+                 }
+                 .hero__title {
+                     font-size: 40px;
+                     line-height: 46px;
+                     margin-bottom: 20px;
+                 }
+                 .hero__slider {
+                     text-align: right;
+                     div.hero__item {
+                         max-width: 340px !important;
+                         margin: 0;
+                     }
+                 }
+                 .hero {
+                     padding-bottom: 30px;
+                 }
+             }
+             
+             @media (max-width: 480px) {
+                 .gallery__title {
+                     &::after {
+                         display: none;
+                     }
+                     &::before {
+                         display: none;
+                     }
+                 }
+             }
+             
+             @media (max-width: 360px) {
+                 .hero__title {
+                     font-size: 30px;
+                     line-height: 36px;
+                 }
+                 .hero__slider {
+                     text-align: right;
+                     div.hero__item {
+                         max-width: 250px !important;
+                         margin: 0 15px;
+                     }
+                 }
+             }

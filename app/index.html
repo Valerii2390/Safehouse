@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="images//header-logo/header-logo.png">
+    <title>Safehouse</title>
 </head>
 
 <body>
@@ -21,25 +22,30 @@
                 </a>
                 <nav class="menu">
                     <div class="header__menu">
+                        <div class="header__menu_burger">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                         <ul class="header__menu_list">
                             <li class="header__menu_item">
                                 <a class="header__menu_link" href="#">
-                                 Портфолио
+                                Портфолио
                                 </a>
                             </li>
                             <li class="header__menu_item">
                                 <a class="header__menu_link" href="#">
-                                 Услуги
+                                Услуги
                                 </a>
                             </li>
                             <li class="header__menu_item">
                                 <a class="header__menu_link" href="#">
-                                 Цены
+                                Цены
                                 </a>
                             </li>
                             <li class="header__menu_item">
                                 <a class="header__menu_link" href="#">
-                                 Контакты
+                                Контакты
                                 </a>
                             </li>
                         </ul>
@@ -47,11 +53,16 @@
                 </nav>
                 <div class="header__call">
                     <a class="header__call_phone" href="tel:+375 (25) 123-45-67">
-                  +375 (25) 123-45-67
+                +375 (25) 123-45-67
                 </a>
                     <a class="header__call_text" href="tel:+375 (25) 123-45-67">
                     заказать звонок
                 </a>
+                    <a class="hide-phone" href="tel:+375 (25) 123-45-67">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.3742 25.1895H22.2148C3.79291 24.1301 1.17729 8.58633 0.811664 3.84258C0.782203 3.47375 0.825809 3.10273 0.939984 2.75078C1.05416 2.39883 1.23666 2.07286 1.47702 1.79156C1.71739 1.51027 2.0109 1.27916 2.34074 1.11149C2.67057 0.94382 3.03025 0.84288 3.39916 0.814454H8.56479C8.94031 0.81409 9.30729 0.926494 9.61819 1.13711C9.9291 1.34772 10.1696 1.64683 10.3085 1.9957L11.7335 5.50195C11.8707 5.84278 11.9048 6.2164 11.8315 6.57641C11.7581 6.93643 11.5806 7.26696 11.321 7.52695L9.32416 9.54258C9.63608 11.3152 10.485 12.9491 11.7559 14.2235C13.0269 15.4978 14.6587 16.351 16.4304 16.6676L18.4648 14.652C18.7287 14.3952 19.0623 14.2219 19.4241 14.1535C19.7859 14.0852 20.1598 14.1248 20.4992 14.2676L24.0335 15.6832C24.3771 15.8265 24.6703 16.0689 24.8757 16.3795C25.081 16.69 25.1893 17.0547 25.1867 17.427V22.377C25.1867 23.1229 24.8903 23.8382 24.3629 24.3657C23.8355 24.8931 23.1201 25.1895 22.3742 25.1895ZM3.62416 2.68945C3.37552 2.68945 3.13707 2.78823 2.96125 2.96404C2.78544 3.13986 2.68666 3.37831 2.68666 3.62695V3.70195C3.11791 9.25195 5.88354 22.377 22.3179 23.3145C22.4411 23.3221 22.5645 23.3053 22.6812 23.2651C22.7979 23.2249 22.9054 23.162 22.9978 23.0802C23.0901 22.9983 23.1653 22.899 23.2192 22.788C23.2731 22.677 23.3045 22.5564 23.3117 22.4332V17.427L19.7773 16.0113L17.0867 18.6832L16.6367 18.627C8.48041 17.6051 7.37416 9.44883 7.37416 9.36445L7.31791 8.91445L9.98041 6.22383L8.57416 2.68945H3.62416Z" fill="white"/>
+</svg>
+                    </a>
                 </div>
             </div>
         </div>
@@ -68,7 +79,7 @@
                     <div class="hero__subtitle">
                         Надежное будущее строим вместе
                     </div>
-                    <a class="hero__link" href="#">
+                    <a class="hero__link" data-fancybox data-src="#modal" href="javascript:;">
                         Получить консультацию 
                     </a>
                 </div>
@@ -188,7 +199,7 @@
 </svg>
                     </div>
                 </div>
-                <div class="tab_content">
+                <div class="tab__content">
                     <div class="tab-item active-tab" id="1" style="background-image: url(images/services/services5.png); width: 593px; height: 753px;">
                         <div class="tab__item_title">
                             Отделочные работы
@@ -244,12 +255,6 @@
                             <li class="tabs__item_content">замена и перенос полотенцесушителя</li>
                             <li class="tabs__item_content">установка кранов на полотенцесушитель</li>
                             <li class="tabs__item_content">установка инсталляций</li>
-                            <li class="tabs__item_content">установка всех видов сантехоборудования</li>
-                            <li class="tabs__item_content">замена батарей отопления</li>
-                            <li class="tabs__item_content">замна и демонтаж радиатора отопления</li>
-                            <li class="tabs__item_content">замена труб в ванной и туалете</li>
-                            <li class="tabs__item_content">замена труб на пластиковые</li>
-                            <li class="tabs__item_content">монтаж трубопроводов пвх</li>
                         </ul>
                     </div>
                 </div>
@@ -264,7 +269,7 @@
     </section>
     <!-- end service -->
     <!-- start form -->
-    <section class="form" style="background-image: url(images/form/form-bg.png); width: 1440px; height: 603px; padding-top: 54px;">
+    <section class="form" style="background-image: url(images/form/form-bg.png); height: 603px; padding-top: 54px;">
         <div class="container">
             <form class="form__inner">
                 <div class="form__inner_content">
@@ -368,15 +373,81 @@
     <section class="gallery">
         <div class="container">
             <div class="gallery__title">
-                ГАЛЕРЕЯ РАБОТ
+                галерея работ
             </div>
-            <div class="gallery__inner">
-                <div class="popup-gallery" style="background-image: url(images/work/work01.jpg); width: 360px; height: 360px;">
-                    <a class="gallery__item_link" href="#popup">
-                        <img src="images/roof/roof02.jpg" alt="">
+            <ul class="popup-gallery">
+                <li class="gallery_item">
+                    <a href="#gallery-1" class="btn__gallery" style="background-image: url(images/work/work01.png); width: 360px; height: 360px;">
+                        плитка
                     </a>
-                    <div id="popup" class="mfp-hide"></div>
-                </div>
+                </li>
+                <li class="gallery_item">
+                    <a href="#gallery-2" class="btn__gallery" style="background-image: url(images/work/work02.png); width: 360px; height: 360px;">
+                    кладка
+                    </a>
+                </li>
+                <li class="gallery_item">
+                    <a href="#gallery-3" class="btn__gallery" style="background-image: url(images/work/work03.png); width: 360px; height: 360px;">
+                        отделка
+                    </a>
+                </li>
+                <li class="gallery_item">
+                    <a href="#gallery-4" class="btn__gallery" style="background-image: url(images/work/work04.png); width: 360px; height: 360px;">
+                        кровля
+                    </a>
+                </li>
+                <li class="gallery_item">
+                    <a href="#gallery-5" class="btn__gallery" style="background-image: url(images/work/work05.png); width: 360px; height: 360px;">
+                        сантехника
+                    </a>
+                </li>
+                <li class="gallery_item">
+                    <a href="#gallery-6" class="btn__gallery" style="background-image: url(images/work/work06.png); width: 360px; height: 360px;">
+                    электрика
+                    </a>
+                </li>
+            </ul>
+            <div id="gallery-1" class="hidden">
+                <a href="images/roof/roof02.png" class="hidden-link"></a>
+                <a href="images/roof/roof03.png" class="hidden-link"></a>
+                <a href="images/roof/roof04.png" class="hidden-link"></a>
+                <a href="images/roof/roof05.png" class="hidden-link"></a>
+                <a href="images/roof/roof06.png" class="hidden-link"></a>
+            </div>
+            <div id="gallery-2" class="hidden">
+                <a href="images/roof/roof02.png" class="hidden-link"></a>
+                <a href="images/roof/roof03.png" class="hidden-link"></a>
+                <a href="images/roof/roof04.png" class="hidden-link"></a>
+                <a href="images/roof/roof05.png" class="hidden-link"></a>
+                <a href="images/roof/roof06.png" class="hidden-link"></a>
+            </div>
+            <div id="gallery-3" class="hidden">
+                <a href="images/roof/roof02.png" class="hidden-link"></a>
+                <a href="images/roof/roof03.png" class="hidden-link"></a>
+                <a href="images/roof/roof04.png" class="hidden-link"></a>
+                <a href="images/roof/roof05.png" class="hidden-link"></a>
+                <a href="images/roof/roof06.png" class="hidden-link"></a>
+            </div>
+            <div id="gallery-4" class="hidden">
+                <a href="images/roof/roof02.png" class="hidden-link"></a>
+                <a href="images/roof/roof03.png" class="hidden-link"></a>
+                <a href="images/roof/roof04.png" class="hidden-link"></a>
+                <a href="images/roof/roof05.png" class="hidden-link"></a>
+                <a href="images/roof/roof06.png" class="hidden-link"></a>
+            </div>
+            <div id="gallery-5" class="hidden">
+                <a href="images/roof/roof02.png" class="hidden-link"></a>
+                <a href="images/roof/roof03.png" class="hidden-link"></a>
+                <a href="images/roof/roof04.png" class="hidden-link"></a>
+                <a href="images/roof/roof05.png" class="hidden-link"></a>
+                <a href="images/roof/roof06.png" class="hidden-link"></a>
+            </div>
+            <div id="gallery-6" class="hidden">
+                <a href="images/roof/roof02.png" class="hidden-link"></a>
+                <a href="images/roof/roof03.png" class="hidden-link"></a>
+                <a href="images/roof/roof04.png" class="hidden-link"></a>
+                <a href="images/roof/roof05.png" class="hidden-link"></a>
+                <a href="images/roof/roof06.png" class="hidden-link"></a>
             </div>
         </div>
     </section>
@@ -1636,11 +1707,110 @@
                     </div>
                 </div>
             </div>
+            <a class="download" href="images/pdf/safehouse.pdf" class="download_btn" download="">
+            Скачать весь прайс
+            </a>
+            <div class="call__title">
+                Свяжитесь с нами или оставьте заявку
+            </div>
         </div>
     </section>
-    <footer>
-
+    <section class="form form1" style="background-image: url(images/form/form-bg.png); padding-bottom: 100px;">
+        <div class="container">
+            <form class="form__inner form__inner1">
+                <div class="form__inner_content">
+                    <div class="form__inner_title">
+                        заполните форму
+                    </div>
+                    <label>
+                <input type="text" placeholder="Имя" required>
+                </label>
+                    <label>
+                <input type="text" placeholder="Email" required>
+                </label>
+                    <div class="form-text" href="#">
+                        Опишите свою проблему
+                    </div>
+                    <textarea type="text" cols="20" rows="10" required>
+                </textarea>
+                    <button class="form__btn" type="submit">
+                    Получить консультацию
+                    </button>
+                    <label class="form__label">
+                    <input class="form__input" type="checkbox" value="1">
+                    <span>Принимаю условия политики конфединциальности</span>
+                </label>
+                </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__inner_info">
+                    <a class="footer__inner_phone" href="tel: + 375-29-123-45-67">
+                        + 375-29-123-45-67
+                    </a>
+                    <a href="mailto:stroyka@gmail.com" class="footer__info_mail">
+                        stroyka@gmail.com
+                    </a>
+                </div>
+                <div class="footer__inner_content">
+                    <ul class="footer__inner_list">
+                        <li class="footer__inner_item">
+                            <a href="#" class="footer__inner_link">
+                            ИП Костин А.Н.
+                            </a>
+                        </li>
+                        <li class="footer__inner_item">
+                            <a href="#" class="footer__inner_link">
+                            УНП      11111111111
+                            </a>
+                        </li>
+                        <li class="footer__inner_item">
+                            <a href="#" class="footer__inner_link">
+                            Юридический адрес
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="footer__logo">
+                © Safehouse 2021
+                </a>
+        </div>
     </footer>
+    <!-- end footer -->
+    <div id="modal">
+        <div class="form">
+            <div class="container">
+                <form class="form__inner">
+                    <div class="form__inner_content">
+                        <div class="form__inner_title">
+                            заполните форму
+                        </div>
+                        <label>
+                <input type="text" placeholder="Имя" required>
+                </label>
+                        <label>
+                <input type="text" placeholder="Email" required>
+                </label>
+                        <div class="form-text" href="#">
+                            Опишите свою проблему
+                        </div>
+                        <textarea type="text" cols="20" rows="10" required>
+                </textarea>
+                        <button class="form__btn" type="submit">
+                    Получить консультацию
+                    </button>
+                        <label class="form__label">
+                    <input class="form__input" type="checkbox" value="1">
+                    <span>Принимаю условия политики конфединциальности</span>
+                </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>

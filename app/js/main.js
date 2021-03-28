@@ -1,7 +1,7 @@
 $(function() {
     $('.hero__slider').slick({
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 1000,
         dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -37,21 +37,25 @@ $(function() {
         slidesToScroll: 1,
         cssEase: 'linear',
     });
-    $('.popup-gallery').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        tLoading: 'Loading image #%curr%...',
-        mainClass: 'mfp-img-mobile',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
-        },
-        image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-            titleSrc: function(item) {
-                return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+
+
+    $('a.btn__gallery').on('click', function(event) {
+        event.preventDefault();
+
+        var gallery = $(this).attr('href');
+
+        $(gallery).magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery: {
+                enabled: true
             }
-        }
+        }).magnificPopup('open');
     });
+
+
+    $('.header__menu_burger').on('click',
+        function() {
+            $('.header__menu_list').slideToggle();
+        });
 });
